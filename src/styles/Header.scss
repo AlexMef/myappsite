@@ -1,0 +1,111 @@
+.header {
+    $common-color: #ffffff;
+    $hover-color: #bdc3c7;
+    background-color: #2980b9;
+    height: 15vh;
+    position: relative;
+    padding: 0 25px 0 25px;
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .site_menu {
+        float: left;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+
+        .site_name {
+            position: relative;
+            // top: 50%;
+            // transform: translateY(-50%);
+            float: left;
+            font-size: 24px;
+            color: $common-color;
+            
+        }
+        
+        .site_items {
+            position: relative;
+            margin: 0;
+            float: left;
+            // top: 50%;
+            // transform: translateY(-50%);           
+
+            li {
+                margin: 0 16px;
+                margin-right: 0;
+                display: inline;
+                list-style-type: none;
+
+                a {
+                    font-size: 18px;
+                    text-decoration: none;
+                    color: $common-color;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: $hover-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .site_contacts {
+        float: right;
+        position: relative;
+        height: inherit;
+
+        #phonenumber {
+            position: relative;
+            display: inline-block;
+            margin-right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            img {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                margin-right: 5px;
+            }
+
+            a {
+                display: inline-block;
+                color: $common-color;
+                text-decoration: none;
+
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+
+        #emailaddress {
+            position: relative;
+            display: inline-block;
+            top: 50%;
+            transform: translateY(-50%);
+
+            img {
+                width: 10px;
+                height: 10px;
+                margin-right: 5px;
+            }
+
+            a {
+                color: $common-color;
+                text-decoration: none;
+
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+#grid {
+    width: auto;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "slider slider slider"
+        "menu menu posts"
+        "footer footer footer";
+    grid-template-rows: 15vh 1fr 120vh 15vh;
+    grid-template-columns: 33vh 1fr 33vh;
+    row-gap: 0px;
+    column-gap: 0px;
+}
+
+#pageHeader {
+
+    grid-area: header;
+}
+
+#pageSlider {
+    grid-area: slider;
+}
+
+
+#contentMenu {
+    grid-area: menu;
+}
+
+#contentPosts {
+    grid-area: posts;
+}
+
+
+
+#pageFooter {
+    grid-area: footer;
+}
+
+
+
+
