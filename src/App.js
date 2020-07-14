@@ -14,7 +14,7 @@ function App() {
             <div id="pageHeader"><Header /></div>
             <div id="pageSlider"><Slider /></div>
             <div id="postsMenu"><PostsMenu /></div>
-            <div id="Posts"><Posts /></div>
+            <div id="posts"><Posts /></div>
             <div id="pageFooter"><Footer /></div>
         </div>
 
