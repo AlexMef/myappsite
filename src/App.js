@@ -5,16 +5,16 @@ import './styles/App.scss';
 import Header from './Header';
 import Slider from './Slider';
 import Footer from './Footer';
-import ContentMenu from './ContentMenu';
-import ContentPosts from './ContentPosts';
+import PostsMenu from './PostsMenu';
+import Posts from './Posts';
 
 function App() {
     return (
         <div id="grid">
             <div id="pageHeader"><Header /></div>
             <div id="pageSlider"><Slider /></div>
-            <div id="contentMenu"><ContentMenu /></div>
-            <div id="contentPosts"><ContentPosts /></div>
+            <div id="postsMenu"><PostsMenu /></div>
+            <div id="Posts"><Posts /></div>
             <div id="pageFooter"><Footer /></div>
         </div>
 

@@ -8,16 +8,15 @@
     grid-template-areas:
         "header header header"
         "slider slider slider"
-        "menu menu posts"
+        "menu posts posts"
         "footer footer footer";
-    grid-template-rows: 15vh 1fr 120vh 15vh;
-    grid-template-columns: 33vh 1fr 33vh;
+    grid-template-rows: 10vh 1fr 1fr 15vh;
+    grid-template-columns: 20vw 1fr 33vw;
     row-gap: 0px;
     column-gap: 0px;
 }
 
 #pageHeader {
-
     grid-area: header;
 }
 
@@ -26,11 +25,11 @@
 }
 
 
-#contentMenu {
+#postsMenu {
     grid-area: menu;
 }
 
-#contentPosts {
+#Posts {
     grid-area: posts;
 }
 
