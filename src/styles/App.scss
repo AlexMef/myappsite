@@ -2,16 +2,15 @@
     width: auto;
     margin-left: 5vh;
     margin-right: 5vh;
+    min-width: 700px;
     overflow: hidden;
 
     display: grid;
     grid-template-areas:
-        "header header header"
-        "slider slider slider"
-        "menu posts posts"
-        "footer footer footer";
-    grid-template-rows: 10vh 1fr 1fr 15vh;
-    grid-template-columns: 20vw 1fr 33vw;
+        "header"
+        "content"
+        "footer";
+    grid-template-rows: 15vh 1fr 15vh;
     row-gap: 0px;
     column-gap: 0px;
 }
@@ -20,20 +19,9 @@
     grid-area: header;
 }
 
-#pageSlider {
-    grid-area: slider;
+#pageContent {
+    grid-area: content;
 }
-
-
-#postsMenu {
-    grid-area: menu;
-}
-
-#posts {
-    grid-area: posts;
-}
-
-
 
 #pageFooter {
     grid-area: footer;

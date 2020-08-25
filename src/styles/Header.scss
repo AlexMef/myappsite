@@ -1,110 +1,51 @@
 .header {
     $common-color: #ffffff;
     $hover-color: #bdc3c7;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
     background-color: #2980b9;
-    height: 10vh;
-    position: relative;
-    padding: 0 25px 0 25px;
 
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+    .siteMenu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
-    .site_menu {
-        float: left;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 24px;
-
-        .site_name {
-            position: relative;
-            // top: 50%;
-            // transform: translateY(-50%);
-            float: left;
-            font-size: 24px;
-            color: $common-color;
-            
+        .siteName {
         }
-        
-        .site_items {
-            position: relative;
-            margin: 0;
-            float: left;
-            // top: 50%;
-            // transform: translateY(-50%);           
 
-            li {
-                margin: 0 16px;
-                margin-right: 0;
-                display: inline;
-                list-style-type: none;
-
-                a {
-                    font-size: 18px;
-                    text-decoration: none;
-                    color: $common-color;
-
-                    &:hover {
-                        text-decoration: none;
-                        color: $hover-color;
-                    }
-                }
-            }
+        .siteItems {
+            display: flex;
+            flex-direction: row;
         }
     }
 
-    .site_contacts {
-        float: right;
-        position: relative;
-        height: inherit;
+    .siteContacts {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 30px;
 
-        #phonenumber {
-            position: relative;
-            display: inline-block;
-            margin-right: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-
+        .phoneNumber {
+            a {
+                text-color: $common-color;
+                text-decoration: none;
+            }
             img {
-                display: inline-block;
                 width: 10px;
                 height: 10px;
-                margin-right: 5px;
-            }
-
-            a {
-                display: inline-block;
-                color: $common-color;
-                text-decoration: none;
-
-                &:hover {
-                    color: $hover-color;
-                }
             }
         }
 
-        #emailaddress {
-            position: relative;
-            display: inline-block;
-            top: 50%;
-            transform: translateY(-50%);
-
+        .emailAdress {
+            a {
+                text-decoration: none;
+            }
             img {
                 width: 10px;
                 height: 10px;
-                margin-right: 5px;
-            }
-
-            a {
-                color: $common-color;
-                text-decoration: none;
-
-                &:hover {
-                    color: $hover-color;
-                }
             }
         }
     }

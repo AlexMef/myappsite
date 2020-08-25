@@ -5,28 +5,28 @@ import img_email from './img/email.png';
 
 function Header() {
     return (
-        <header className="header">
-                <div className="site_menu">
-                    <div className="site_name">MyAppSite</div>
-                    <ul className="site_items">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">About</a></li>
-                    </ul>
+        <div className="header">
+                <div className="siteMenu">
+                    <div className="siteName">MyAppSite</div>
+                    <div className="siteItems">
+                        <div><a href="#">Home</a></div>
+                        <div><a href="#">Documentation</a></div>
+                        <div><a href="#">Gallery</a></div>
+                        <div><a href="#">Help</a></div>
+                        <div><a href="#">About</a></div>
+                    </div>
                 </div>
-                <div className="site_contacts">
-                    <div id="phonenumber">
+                <div className="siteContacts">
+                    <div class="phoneNumber">
                         <img src={img_call} alt="" />
                         <a href="#">8-800-555-3535</a>
                     </div>
-                    <div id="emailaddress">
+                    <div class="emailAdress">
                         <img src={img_email} alt="" />
                         <a href="#">myadress@gmail.com</a>
                     </div>
                 </div>
-        </header>
+        </div>
     );
 }
 
