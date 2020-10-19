@@ -1,0 +1,49 @@
+.content-infoblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .content-infoblock-text {
+        color: #000;
+        font-size: 36px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .content-infoblock-arrow > img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.content-infoblock-items {
+    display: grid;
+    grid-template-areas: 
+    "row-1 row-1 row-1"
+    "row-2 row-2 row-2"
+    "row-3 row-3 row-3";
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    
+}
+
+#row-1 {
+    grid-area: row-1;
+}
+
+#row-2 {
+    grid-area: row-2;
+}
+
+#row-3 {
+    grid-area: row-3;
+}
+
+.item-block {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    border-radius: 20px;
+
+
+}

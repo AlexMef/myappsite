@@ -8,21 +8,21 @@ function Header() {
         <div className="header">
             <div className="header-leftbar">
                 <div className="header-site-title">MyAppSite</div>
-                <ul className="header-site-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
+                <nav className="header-site-menu">
+                    <a href="#">Home</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Help</a>
+                    <a href="#">About</a>
+                </nav>
             </div>
             <div className="header-rightbar">
                 <div class="phone-number">
-                    <img src={img_call} alt="" />
+                    <a src={img_call} alt="" />
                     <a href="#">8-800-555-3535</a>
                 </div>
                 <div class="email-address">
-                    <img src={img_email} alt="" />
+                    <a src={img_email} alt="" />
                     <a href="#">myadress@gmail.com</a>
                 </div>
             </div>
