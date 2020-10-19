@@ -1,31 +1,29 @@
 #grid {
     width: auto;
-    margin-left: 5vh;
-    margin-right: 5vh;
     min-width: 700px;
     overflow: hidden;
 
-    display: grid;
-    grid-template-areas:
-        "header"
-        "content"
-        "footer";
-    grid-template-rows: 15vh 1fr 15vh;
-    row-gap: 0px;
-    column-gap: 0px;
+    // display: grid;
+    // grid-template-areas:
+    //     "header"
+    //     "content"
+    //     "footer";
+    // grid-template-rows: 1fr 8fr 1fr;
+    // row-gap: 0px;
+    // column-gap: 0px;
 }
 
-#pageHeader {
-    grid-area: header;
-}
+// #pageHeader {
+//     grid-area: header;
+// }
 
-#pageContent {
-    grid-area: content;
-}
+// #pageContent {
+//     grid-area: content;
+// }
 
-#pageFooter {
-    grid-area: footer;
-}
+// #pageFooter {
+//     grid-area: footer;
+// }
 
 
 

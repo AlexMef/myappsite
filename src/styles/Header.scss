@@ -1,51 +1,72 @@
 .header {
     $common-color: #ffffff;
     $hover-color: #bdc3c7;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    height: 15vh;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     background-color: #2980b9;
 
-    .siteMenu {
+    .header-leftbar {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: flex-start;
+        
 
-        .siteName {
+        .header-site-title {
+            color: $common-color;
+            font-size: 36px;
+            padding: 15px 30px;
+
+            &:hover {
+                color: gold;
+            }
         }
 
-        .siteItems {
+        .header-site-menu {
             display: flex;
             flex-direction: row;
+            list-style-type: none;
+            a {
+                color: $common-color;
+                text-decoration: none;
+                margin: 10px;
+
+                &:hover {
+                    color: gold;
+                }
+            }
         }
     }
 
-    .siteContacts {
+    .header-rightbar {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-left: 30px;
+        margin: 0 30px;
 
-        .phoneNumber {
+        .phone-number {
+            margin-right: 15px;
             a {
-                text-color: $common-color;
+                color: $common-color;
                 text-decoration: none;
             }
             img {
                 width: 10px;
                 height: 10px;
+                margin-right: 5px;
             }
         }
 
-        .emailAdress {
+        .email-address {
             a {
+                color: $common-color;
                 text-decoration: none;
             }
             img {
                 width: 10px;
                 height: 10px;
+                margin-right: 5px;
             }
         }
     }

@@ -1,0 +1,28 @@
+.content-slider {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: #dadada;
+
+    .slider-container {
+        background-color: rgba(0, 0, 0, 1);
+        z-index: 999;
+        // &:hover {
+        //     opacity: 0;
+        //     transition-duration: 2s;
+        // }
+        padding: 0;
+        margin: 0;
+        .slider-img {
+            padding: 0;
+            margin: 0;
+            opacity: 0.9;
+            -webkit-transition: opacity 3s;
+            &:hover {
+                opacity: 0.55;
+                -webkit-transition: opacity 3s;
+            }
+            
+            }
+        }
+    }

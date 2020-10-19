@@ -1,10 +1,16 @@
 import React from 'react';
-import Slider from './Slider';
-import './styles/Slider.scss';
+import './styles/Content.scss'
+
+import smartphone from "./img/slider_background_cut.png";
+
 
 function Content() {
     return (
-        <div className="slider"><Slider /></div>
+        <div className="content-slider">
+            <div className="slider-container">
+                <img className="slider-img" src={smartphone} alt="" />
+            </div>
+        </div>
     );
 }
 
