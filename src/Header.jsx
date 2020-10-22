@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink, BrowserRouter} from 'react-router-dom';
 import './styles/Header.scss'
 import img_call from './img/call.png';
 import img_email from './img/email.png';
@@ -7,10 +8,12 @@ function Header() {
     return (
         <div className="header">
             <div className="header-leftbar">
-                <div className="header-site-title">MyAppSite</div>
+                <div className="header-site-title">
+                    <NavLink to="/home">MyAppSite</NavLink>
+                    </div>
                 <nav className="header-site-menu">
-                    <a href="#">Home</a>
-                    <a href="#">Documentation</a>
+                    <NavLink to="/home">Home</NavLink>
+                    <NavLink to="/docs">Documentation</NavLink>
                     <a href="#">Gallery</a>
                     <a href="#">Help</a>
                     <a href="#">About</a>
@@ -18,12 +21,12 @@ function Header() {
             </div>
             <div className="header-rightbar">
                 <div class="phone-number">
-                    <a src={img_call} alt="" />
-                    <a href="#">8-800-555-3535</a>
+                    <img className="phone-number-img" src={img_call} alt="" />
+                    <a className="phone-number-value" href="#">8-800-555-3535</a>
                 </div>
                 <div class="email-address">
-                    <a src={img_email} alt="" />
-                    <a href="#">myadress@gmail.com</a>
+                    <img className="email-address-img" src={img_email} alt="" />
+                    <a className="email-address-value" href="#">myadress@gmail.com</a>
                 </div>
             </div>
         </div>

@@ -1,20 +1,28 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './styles/App.scss';
 // import slider_img from './img/smartphone.png';
 
 import Header from './Header';
 import Content from './Content';
 import Footer from './Footer';
+import Docs from './Docs';
 
 
 
 function App() {
     return (
-        <div id="grid">
-            <div id="pageHeader"><Header /></div>
-            <div id="pageContent"><Content /></div>
-            <div id="pageFooter"><Footer /></div>
-        </div>
+        <BrowserRouter>
+            <div id="app-wrapper">
+                <div><Header /></div>
+                <div className="app-wrapper-content">
+                    <Route path="/home" component={Content} />
+                    <Route path="/docs" component={Docs} />
+                </div>
+
+                <div><Footer /></div>
+            </div>
+        </BrowserRouter>
 
     );
 }

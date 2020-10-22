@@ -11,19 +11,24 @@
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
-        
+        padding: 15px 30px;
 
         .header-site-title {
-            color: $common-color;
             font-size: 36px;
-            padding: 15px 30px;
+            padding-right: 30px;
 
-            &:hover {
-                color: gold;
+            a {
+                text-decoration: none;
+                color: $common-color;
+
+                &:hover {
+                    color: gold;
+                }
             }
         }
 
         .header-site-menu {
+            font-size: 18px;
             display: flex;
             flex-direction: row;
             list-style-type: none;
@@ -47,26 +52,26 @@
 
         .phone-number {
             margin-right: 15px;
-            a {
-                color: $common-color;
-                text-decoration: none;
-            }
-            img {
+            .phone-number-img {
                 width: 10px;
                 height: 10px;
                 margin-right: 5px;
+            }
+            .phone-number-value {
+                color: $common-color;
+                text-decoration: none;
             }
         }
 
         .email-address {
-            a {
-                color: $common-color;
-                text-decoration: none;
-            }
-            img {
+            .email-address-img {
                 width: 10px;
                 height: 10px;
                 margin-right: 5px;
+            }
+            .email-address-value {
+                color: $common-color;
+                text-decoration: none;
             }
         }
     }
