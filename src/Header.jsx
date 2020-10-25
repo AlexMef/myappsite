@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink, BrowserRouter} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import './styles/Header.scss'
 import img_call from './img/call.png';
 import img_email from './img/email.png';
@@ -9,10 +9,10 @@ function Header() {
         <div className="header">
             <div className="header-leftbar">
                 <div className="header-site-title">
-                    <NavLink to="/home">MyAppSite</NavLink>
+                    <NavLink to="/">MyAppSite</NavLink>
                     </div>
                 <nav className="header-site-menu">
-                    <NavLink to="/home">Home</NavLink>
+                    <NavLink to="/">Home</NavLink>
                     <NavLink to="/docs">Documentation</NavLink>
                     <a href="#">Gallery</a>
                     <a href="#">Help</a>

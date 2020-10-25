@@ -7,7 +7,7 @@ function Content() {
     return (
         <div className="root">
             <div><Slider /></div>
-            <div><InfoBlock /></div>
+            <div><InfoBlock text="Sometext" /></div>
         </div>
     );
 }

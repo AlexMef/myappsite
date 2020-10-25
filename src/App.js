@@ -16,7 +16,7 @@ function App() {
             <div id="app-wrapper">
                 <div><Header /></div>
                 <div className="app-wrapper-content">
-                    <Route path="/home" component={Content} />
+                    <Route exact path="/" component={Content} />
                     <Route path="/docs" component={Docs} />
                 </div>
 
